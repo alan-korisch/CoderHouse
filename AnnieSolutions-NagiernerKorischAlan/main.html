@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cotizador de servicios</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>Cotizador de servicios</h1>
+	<form>
+		<label for="nombre">Nombre:</label>
+		<input type="text" id="nombre" name="nombre" required>
+
+		<label for="apellido">Apellido:</label>
+		<input type="text" id="apellido" name="apellido" required>
+
+        <span>
+            <label>Servicios:</label><br>
+            <input type="checkbox" id="aire" name="servicios" value="aire">
+            <label for="aire">Aire acondicionado</label><br>
+            <input type="checkbox" id="termotanque" name="servicios" value="termotanque">
+            <label for="termotanque">Termotanque</label><br>
+            <input type="checkbox" id="riego" name="servicios" value="riego">
+            <label for="riego">Sistema de riego</label><br>
+        </span>
+
+		<button type="button" onclick="calcularCotizacion()">Calcular cotización</button>
+	</form>
+
+	<div id="cotizacion"></div>
+
+	<script src="principal.js"></script>
+</body>
+</html>
